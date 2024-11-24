@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CSS overflow</title>
+    <style>
+    .container{
+        border:2px solid black ;
+        width: 200px;
+        height: 100px;
+        padding:10px ;
+        margin:25px ;
+        display:inline-block ;
+    }
+    .visible{
+        background:purple ;
+        overflow:visible ;
+    }
+    .hidden{
+        background:yellowgreen ; 
+        overflow:hidden ;
+    }
+    .auto{
+        background:red;
+        overflow:auto ;
+    }
+    .scroll{
+        background:palevioletred ;
+        overflow:scroll;
+    }
+    .clip{
+        background:greenyellow ;
+        overflow:clip ;
+    }
+     </style>
+</head>
+<body>
+    <h1>CSS overflow Property</h1>
+    <div class="container visible">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cum aliquam deserunt tenetur suscipit, quisquam ea laudantium facilis? Accusamus enim unde dolorum corporis sequi sed neque iusto consequuntur assumenda 
+    </div>
+    <div class="container hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque corrupti totam eveniet optio commodi neque repellat consequuntur magnam perferendis doloribus error, similique animi voluptatibus ab deserunt aut repudiandae
+    </div>
+    <div class="container auto">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vitae magnam similique labore. Animi maiores earum, laborum accusantium impedit unde quis nulla vel? Perspiciatis odit nisi ipsam quo unde 
+    </div>
+    <div class="container scroll">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, culpa minima quaerat inventore nobis nemo consequuntur id tempore eaque earum modi! Veritatis neque, et velit ullam commodi labore expedita vital 
+         </div>
+         <div class="container clip">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias voluptates reiciendis nisi velit, ipsa laudantium, nobis quae rem quis optio eum provident tenetur doloribus enim! Esse dolor officiis eum 
+
+         </div>
+</body>
+</html>

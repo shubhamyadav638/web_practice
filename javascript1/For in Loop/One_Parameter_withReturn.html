@@ -1,0 +1,27 @@
+<!---one perameter with returns keywords-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>one perameter with returns keywords</h1>
+    <script>
+        function display(a){
+            return a;
+        }
+        console.log("A value is:" + display(100));//A value is:100
+        //1way  
+      //  arrow function(ES-6)
+        const display1=(a)=>a;
+        //call function
+        console.log("value of a:", display1(900));//value of a: 900
+        //2 way
+        const display2=a=>a;
+        //call function
+        console.log("A:" +display2(345));//A:345
+    </script>
+</body>
+</html>

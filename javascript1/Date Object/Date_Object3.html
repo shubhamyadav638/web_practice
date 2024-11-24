@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <h1>js date object</h1>
+          <div id="demo"></div>
+          <script>
+              const d=new Date()
+              console.log(d);//Wed Aug 21 2024 15:36:07 GMT+0530 (India Standard Time)
+              const date=d.getDate();
+              const month=d.getMonth()+1;
+              const year=d.getYear();
+              console.log("today:"+date+":" +month+":"+year);//today:21:7:124
+              console.log(`today: ${date} : ${month} : ${year}`);//today: 21 : 8 : 124
+              document.getElementById("demo").innerHTML=d;//Wed Aug 21 2024 15:38:50 GMT+0530 (India Standard Time)
+            
+          </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Javascript Events</title>
+</head>
+<body>
+    <h1>Javascript onsubmit Event</h1>
+    <h2>Form Events</h2>
+    <form action="https://www.zomato.com/bangalore" onsubmit="submitFunction()" target="_blank">
+    <label for="myInput">Enter you website</label>
+    <input type="text" id="fname">   
+    <input type="submit" value="SUBMIT"> 
+</form>
+<script>
+          function submitFunction(){
+                    Websitename=document.forms[0].fname.value;
+                    alert("Hello"+Websitename+"!You will now be redirected to https://www.zomato.com/bangalore");
+          }
+</script>  
+</body>
+</html>

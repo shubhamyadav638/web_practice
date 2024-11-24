@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+      <script>
+        function findSecondLargest(arr) {
+    if (arr.length < 2) {
+        throw new Error("Array must contain at least two elements.");
+    }
+
+    let largest = -Infinity;
+    let secondLargest = -Infinity;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > largest) {
+            secondLargest = largest;
+            largest = arr[i];
+        } else if (arr[i] > secondLargest && arr[i] < largest) {
+            secondLargest = arr[i];
+        }
+    }
+
+    if (secondLargest === -Infinity) {
+        throw new Error("Array does not contain a second distinct largest element.");
+    }
+
+    return secondLargest;
+}
+
+
+const array = [ 5, 4, 100, 100];
+try {
+    const secondLargest = findSecondLargest(array);
+    console.log(`The second largest element is: ${secondLargest}`);
+} catch (error) {
+    console.log(error.message);
+}
+
+
+      </script>    
+</body>
+
+</html>
+<!--output-5-->

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+    <h1>Javascript mouseup/mouseDown</h1> 
+    <h3>Mouse Event</h3>  
+    <p id="demo" onmouseup="mouseUp()" onmousedown="mouseDown()">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quasi enim aperiam tempore quas similique porro quidem temporibus minima. Quibusdam, similique at! Deserunt, vero cum omnis nulla iste quod vitae. 
+    </p> 
+
+</body>
+<script>
+          function mouseUp(){
+                    document.getElementById("demo").style.color="Orange";
+          }
+          function mouseDown(){
+         document.getElementById("demo").style.color="blue";
+          }
+</script>
+</html>

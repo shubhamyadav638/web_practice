@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: lightpink;
+            padding: 20px;
+            border: 5px solid green;
+        }
+        div > p{
+            background-color: yellowgreen;
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Child Combinator (>) </h1>
+    <div>
+        <h1> Parent [Div]</h1>
+        <p>Paragraph - 1(Div)</p>
+        <p>Paragraph - 2(Div)</p>
+        <p>Paragraph - 3(Div)</p>
+        <section>
+            <h1>Child [Section]</h1>
+            <p>Paragraph - 1(section)</p>
+            <p>Paragraph - 1(section)</p>
+            <p>Paragraph - 1(section)</p>
+        </section>
+    </div>
+    <p>Paragraph - 1(OUTER DIV)</p>
+    <p>Paragraph - 2(OUTER DIV)</p>
+    <p>Paragraph - 3(OUTER DIV)</p>
+</body>
+</html>

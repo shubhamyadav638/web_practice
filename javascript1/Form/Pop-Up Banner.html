@@ -1,0 +1,41 @@
+<!--write a javascript program to create a pop-up banner which gets pop-up after 10 seconds and should disappear after 20 seconds?-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pop-Up Banner</title>
+<style>
+ #popupBanner {
+display: none; /* Initially hidden */
+position: fixed;
+top: 20px;
+left: 20px;
+padding: 10px;
+background-color: #ffcc00;
+border: 1px solid #ccc;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+}
+</style>
+</head>
+<body>
+ <h1>Pop-Up Banner</h1>
+ <div id="popupBanner">This is a pop-up banner!"></div>
+<script>
+          // Function to show the banner
+          function showBanner() {
+            const banner = document.getElementById('popupBanner');
+            banner.style.display = 'block';
+            // Hide the banner after 20 seconds
+            setTimeout(() => {
+                banner.style.display = 'none';
+            }, 2000); // 20000 milliseconds = 20 seconds
+        }
+        // Show the banner after 10 seconds
+        setTimeout(showBanner, 10000); // 10000 milliseconds = 10 seconds
+          
+</script>
+            
+</body>
+</html>

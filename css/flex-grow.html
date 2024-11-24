@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>The flex-grow Property</title>
+    <style>
+        .flex-container{
+            background-color: brown;
+            display: flex;
+        }
+        .flex-container > div {
+            background-color: white;
+            width: 100px;
+            margin: 10px;
+            height: 100px;
+            font-size: 20px;
+            line-height: 75px;
+            padding: 4px;
+            text-align: center;
+        }
+        .glow div {
+            flex-grow: 1 ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Without flex-grow Property</h1>
+    <div class="flex-container">
+   <div>Swati</div>
+   <div>Jyotsana</div>
+   <div>Surbhi</div>
+    </div>
+    <h1>Without flex-grow Property</h1>
+    <div class="flex-container glow">
+        <div>Swati</div>
+        <div>Jyotsana</div>
+        <div>Surbhi</div>
+    </div>
+    <h1>Without flex-grow Property</h1>
+    <div class="flex-container">
+        <div style="flex-grow: 1;">Swati</div>
+        <div style="flex-grow: 1;">Jyotsana</div>
+        <div style="flex-grow: 8;">Surbhi</div>
+      </div>  
+</body>
+</html>

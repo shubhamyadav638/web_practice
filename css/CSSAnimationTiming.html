@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet;
+            margin: 50px auto;
+            position: relative;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            animation-name: slide;
+            animation-duration: 5s;
+            position: absolute;
+            left: 0px;
+            top: 25px;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes slide{
+            0% {
+                left: 0px;
+
+            }
+            100% {
+                left: 250px;
+               }
+               }
+               .a1{
+                animation-timing-function: ease;
+             }
+             .a2{
+                animation-timing-function: liner;
+             }
+             .a3{
+                animation-timing-function: ease-in;
+             }
+             a4{
+                animation-timing-function: ease-out;
+             }
+              .a5{
+                animation-timing-function: ease-in-out;
+              }
+            </style>
+          </head>
+         <body>
+        <h1>ease-specifies an animation with a slow start,then fast,then end
+        slowly(this is default)
+         </h1>
+        <div class="container">
+         <div class="box a1"></div>
+        </div>
+        <h1>
+        linear-specifies an animation with the same speed from start to end
+    </h1>
+    <div class="container">
+    <div class="box a2"></div>
+    </div>
+    <h1>ease-in-specifies an animation with a slow start</h1>
+    <div class="container">
+    <div class="box a3"></div>
+    </div>
+    <h1>ease-out-specifies an animation with a slow end</h1>
+    <div class="container">
+    <div class="box a4"></div>
+    </div>
+    <h1>ease-in-out-specifies an animation with a slow start and end</h1>
+    <div class="container">
+    <div class="box a5"></div>
+    </div>
+</body>
+</html>

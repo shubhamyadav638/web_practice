@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>array find method </h1>
+    <script>
+        const numbers = [5, 12, 8, 130, 44, "10"];
+//Find the first number greater then 10
+ const great=numbers.find((num)=>num>10);
+ console.log(great);//12
+ //Find the first number lesser then 10
+ const less=numbers.find((num)=>num<10);
+ console.log(less);//5
+ //Find the first number equal then 10
+ const equal=numbers.find((num)=>num=="10");
+ console.log(equal);//10
+ const equal2=numbers.find((num)=>num==10);
+ console.log(equal2);//10
+ const equal3=numbers.find((num)=>num==="10");
+ console.log(equal3);//10
+ const equal4=numbers.find((num)=>num===10);
+ console.log(equal4);//undefined
+ 
+    </script>
+</body>
+</html>

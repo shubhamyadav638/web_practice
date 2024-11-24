@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blueviolet;
+            display: flex;
+            height: fit-content;
+        }
+        .box{
+            background-color: chocolate;
+            padding: 10px;
+            margin: 10px;
+            height: fit-content;
+        }
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .column-reverse{
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+ <h1>Flex direction(row(default))</h1>
+ <div class="container">
+    <div class="box">one</div>
+    <div class="box">Two</div>
+    <div class="box">Three</div>
+    </div>
+    <h1>Flex direction(row-reverse)</h1>
+    <div class="row-reverse container">
+       <div class="box">One</div>
+       <div class="box">Two</div>
+       <div class="box">Three</div>
+       </div> 
+       <h1>Flex direction(column)</h1>
+    <div class="column container">
+       <div class="box">One</div>
+       <div class="box">Two</div>
+       <div class="box">Three</div>
+       </div> 
+       <h1>Flex direction(column-reverse)</h1>
+    <div class="column-reverse container">
+       <div class="box">One</div>
+       <div class="box">Two</div>
+       <div class="box">Three</div>
+       </div> 
+</body>
+</html>

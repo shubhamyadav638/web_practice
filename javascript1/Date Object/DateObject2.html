@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+   <h1>javascript Date object2</h1> 
+   <div id="demo"></div>
+   <script>
+     // create date object
+     const d=new Date();
+     console.log(d);
+     let a= document.getElementById("demo") ;
+     a.innerHTML=d;
+     //get Date and time using date methods
+     const date=d.getDate();
+     const month=d.getMonth()+1;
+     const year=d.getFullYear(); 
+     console.log("Today:"+date+":"+month+":"+year);//Today:21:8:2024
+     console.log(`Today:${date}: ${month}: ${year}`);//Today:21: 8: 2024
+      const today=`TODAY: ${date}: ${month}: ${year}}`;
+      document.getElementById("demo").innerHTML=today;
+      const hours=d.getHours();
+      const minutes=d.getMinutes();
+      const second=d.getSeconds();
+      console.log(`Time:${hours}:${minutes}:${second}`);//Time:15:44:37
+      document.getElementById("demo").innerHTML=`Time:${hours}:${minutes}:${second}`;
+   </script>      
+</body>
+</html>

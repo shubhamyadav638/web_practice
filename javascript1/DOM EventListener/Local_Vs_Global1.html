@@ -1,0 +1,24 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+</head>
+<body>
+<h1>Javscript Local vs Global</h1>
+<script> 
+let a = 99;
+ const b = 100;
+console.log(a); //99 
+console.log(b); //100
+{
+let a = 1000; 
+const b = 9000;
+console.log(a); //1000 
+console.log(b); //9000
+}
+console.log(a); //99
+console.log(b); //100
+</script>
+</body>
+</html>

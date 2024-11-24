@@ -1,0 +1,27 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Document</title>
+</head>
+<body>
+<h1>With JavaScript Closure</h1>
+<h3 id="demo"></h3>
+<script> 
+//Outer Function 
+function outerFunc(name){
+//---->2(name = Javascript Closure)
+//inner Function 
+function innerFunc(){ 
+ //---->4 
+console.log(`Hello ${name}`); //---->5 
+let a = document.getElementById("demo"); //---->6 <h3></h3> 
+a.innerHTML = "Welcome" + name; //---->7
+}
+// calling Inner Function 
+innerFunc(); // ------>3
+}
+// Calling Outer Function
+outerFunc("Javascript Closure"); // --->1
+</script>
+</body>
+</html>

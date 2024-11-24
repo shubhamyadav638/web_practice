@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initialscale=1.0" />
+<title>Document</title>
+</head>
+<body>
+<h1>Javscript Map</h1>
+<script>
+//create Map
+const person = new Map();
+
+// set the value
+person.set("firstName", "Swati");
+person.set("lastName", "Maurya");
+person.set(1, 5678);
+person.set(true, "False");
+person.set("firstName1", "Nidhi");
+console.log(person);
+
+// get
+console.log(person.get("firstName")); //OUTPUT:Anu
+console.log(person.get(1)); //output:5678
+console.log(person.get()); //OUTPUT:undefined
+
+//delete
+person.delete("firstName1");
+
+//size
+console.log(person.size);
+
+//has
+console.log(person.has("lastName")); //true
+console.log(person.has(1)); //true
+console.log(person.has("1")); //false
+
+// entries
+console.log(person.entries());
+
+// 1-way
+for (let x of person.entries()) {
+console.log(x);
+}
+
+//2-way
+console.log("2-way");
+for (let [key, value] of person) {
+console.log(`${key}:${value}`);
+}
+
+//for Each
+console.log("For Each");
+// array_name.foreach(fuunction(currentValue,index))
+// mapname.foreach(function(value,key))
+
+//1-way
+// function mapValue(cvalue, key) {
+// console.log(`${key}------${cvalue}`);
+// }
+
+//2-way
+// const mapValue = (cvalue, key) => {
+// console.log(`${key}---%%---${cvalue}`);
+// };
+// person.forEach(function (cvalue, key) {
+// console.log(`${key}-***---${cvalue}`);
+// });
+
+person.forEach((cvalue, key) => {
+console.log(`${key}-***---${cvalue}`);
+});
+
+// Key values
+console.log("Key Values:");
+for (let key of person.keys()) {
+console.log(key);
+}
+
+// values
+console.log("Only value");
+for (let value of person.values()) {
+console.log(value);
+}
+</script>
+</body>
+</html>

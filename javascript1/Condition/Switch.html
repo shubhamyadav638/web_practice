@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript switch</h1>
+    <h3 id="demo"></h3>
+    <script>
+        let coupon ="mobile123";
+        switch (coupon){
+            case "car123":
+                console.log("You Got Car");
+                document.getElementById("demo").innerHTML="You Got Car";
+                break;
+                case "mobile123":
+                    console.log("Congrts you got Mobile..");
+                    document.getElementById("demo").innerHTML="Congrte you got Mobile..";
+                    break;
+                    case "cash1000":
+                        console.log("Congrts You got 1000rs");
+                        document.getElementById("demo").innerHTML="Congrts You got 1000rs";
+                        break;
+                        default:
+                            console.log("Better Luck Next Time...");
+                            document.getElementById("demo").innerHTML="Better Luck Next Time...";
+                            break;
+        
+        }
+    </script>
+</body>
+</html>

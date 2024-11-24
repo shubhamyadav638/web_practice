@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis Voice Assistant</title>
+</head>
+<body>
+    <h1>Jarvis Voice Assistant</h1>
+    <button onclick="startJarvis()">Start Jarvis</button>
+    <p id="output"></p>
+
+    <script>
+        // Check if the browser supports the Web Speech API
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognition) {
+            alert("Your browser does not support Speech Recognition.");
+        }
+
+        // Initialize the Speech Recognition
+        const recognition = new SpeechRecognition();
+        recognition.lang = 'en-US';
+        recognition.interimResults = false;
+        recognition.continuous = true;
+
+        // Start Jarvis
+        function startJarvis() {
+            recognition.start();
+            document.getElementById("output").textContent = "Listening...";
+        }
+
+        // Stop Jarvis
+        function stopJarvis() {
+            recognition.stop();
+            document.getElementById("output").textContent = "Stopped.";
+        }
+
+        // Voice Commands
+        recognition.onresult = (event) => {
+            const transcript = event.results[event.results.length - 1][0].transcript.trim().toLowerCase();
+            document.getElementById("output").textContent = `You said: "${transcript}"`;
+
+            // Handle basic commands
+            if (transcript.includes("hello jarvis")) {
+                speak("Hello! How can I help you?");
+            } else if (transcript.includes("open google")) {
+                speak("Opening Google.");
+                window.open("https://www.google.com", "_blank");
+            } else if (transcript.includes("what's the time")) {
+                const now = new Date();
+                speak(`The time is ${now.getHours()} : ${now.getMinutes()}`);
+            } else if (transcript.includes("stop listening")) {
+                speak("Stopping listening.");
+                stopJarvis();
+            } else {
+                speak("I didn't understand that. Please try again.");
+            }
+        };
+
+        // Text to Speech (TTS) function
+        function speak(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(utterance);
+        }
+
+        // Error handling
+        recognition.onerror = (event) => {
+            console.error("Error occurred in speech recognition: ", event.error);
+            document.getElementById("output").textContent = "Error: " + event.error;
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The align-self Property</title>
+    <style>
+        .flex-container{
+            background-color: blueviolet;
+            display: flex;
+            height: 200px;
+        }
+        .flex-container div{
+            background-color: #fff;
+            margin: 10px;
+            font-size: 20px;
+            line-height: 75px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Without The align-self Property</h1>
+    <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    </div>
+    <h1>With The align-self Property</h1>
+    <div class="flex-container">
+    <div style="align-self:center;">1</div>
+    <div>2</div>
+    <div style="align-self:center;">3</div>
+    <div style="align-self:center;">4</div>
+    </div>
+</body>
+</html>

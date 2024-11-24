@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Numbers</title>
+</head>
+<body>
+
+    <h2>Unique Numbers</h2>
+    <p id="result"></p>
+    <script>
+        // Sample array with duplicates
+        const numbers = [1, 2, 2, 3, 4, 4, 5];
+        const uniqueNumbers = [];
+        
+        // Loop to remove duplicates
+        for (let i = 0; i < numbers.length; i++) {
+            if (!uniqueNumbers.includes(numbers[i])) {
+                uniqueNumbers.push(numbers[i]);
+            }
+        }
+        // Display unique numbers on the web page using innerHTML
+        document.getElementById('result').innerHTML = 'Unique values: ' + uniqueNumbers.join(', ');
+    </script>
+</body>
+</html>

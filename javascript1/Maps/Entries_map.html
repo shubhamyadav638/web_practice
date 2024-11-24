@@ -1,0 +1,21 @@
+<!-- Javascript entries Method -->
+<!DOCTYPE html>
+<html>
+<body>
+<h2> Javascript Map Object</h2>
+<p id="demo"></p>
+<script>
+const mobile=new Map([
+["Oppo",4],
+["Mi",2],
+["Vivo",9] 
+]);
+let text=" ";
+for(const x of mobile.entries())
+{
+text+=x+"<br>";
+}
+document.getElementById("demo").innerHTML=text;
+</script>
+</body>
+</html>

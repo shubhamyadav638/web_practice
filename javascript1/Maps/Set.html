@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initialscale=1.0" />
+<title>Document</title>
+</head>
+<body>
+<h1>Javscript Set</h1>
+<script>
+// Array
+const fruits = ["Apple", "Orange", "Mango", "Apple", "Orange",
+"Mango"];
+console.log(fruits);
+// create set
+const fruits1 = new Set();
+// add the value
+fruits1.add("Apple");
+fruits1.add("mango");
+fruits1.add("Orange");
+fruits1.add("Apple1");
+fruits1.add("mango1");
+fruits1.add("Orange1");
+// get the values
+console.log(fruits1);
+//delete
+fruits1.delete("Apple1");
+console.log(fruits1);
+// has
+console.log(fruits1.has("Apple")); //true
+console.log(fruits1.has("Apple1")); //false
+//foreach
+fruits1.forEach((value, index) => {
+console.log(`${index}:${value}`);
+});
+for (let x of fruits1.values()) {
+console.log(x);
+}
+//size
+console.log(fruits1.size);
+</script>
+</body>
+</html>

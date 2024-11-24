@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+  <h1>With Event Listener("removeEventListener")</h1>
+  <button id="myButton">click</button>
+  <script>
+   // document
+   // .getElementById("myButton")
+    //.addEventListener("click",()=>alert("Button was clicked"));
+
+    //remove the event
+    document
+    .getElementById("myButton")
+    .removeEventListener("click", () => alert ("Button"));
+  </script>          
+</body>
+</html>

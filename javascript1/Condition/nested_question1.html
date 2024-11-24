@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript if else nested condition</h1>
+    <div id="demo"></div>
+    <script>
+        let num = Number(prompt("plese enter your temprature..."));
+
+
+if (num <=90){
+    console.log("Normal");
+    document.getElementById("demo").innerHTML="Normal";
+    }
+else if (num >=91 && num <106){
+console.log("fever");
+document.getElementById("demo").innerHTML="fever";
+}
+  else if (num >=106 && num < 111){
+    console.log("High fever");
+    document.getElementById("demo").innerHTML="High fever";
+    }
+
+else if (num >= 111 && num <151){
+    console.log("Very high fever");
+    document.getElementById("demo").innerHTML="Very high fever";
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate Example</title>
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            background-color: blue;
+            text-align: center;
+            line-height: 70px;
+            font-size: 25px;
+            display: inline-block;
+        }
+        .tml1{
+            transform: translate(500px,300px);/*first value x( move into right) second value y (move into down)*/
+        }
+        .tml2{
+            transform: translate(-200px,-50px);first value x( move into left) /*second value y (move into up)*/
+        }
+    </style>
+</head>
+<body>
+    <div>original size</div>
+    <div class="tml1">Tranlate Method(Right and down)</div>
+    <div class="tml2">Tranlate Method(Left and up)</div>
+</body>
+</html>

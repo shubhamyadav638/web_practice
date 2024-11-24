@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+     <h1>Javascript Mouse Event</h1>
+     <h2>MouseOver/MouseOut</h2>
+     <p id="demo" onmouseover="mouseover ()" onmouseout="mouseout()">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti in, nisi earum expedita eum aliquid porro quam suscipit molestiae, cum fugit commodi, reiciendis quos dolor perspiciatis error harum quaerat nam!</p>
+<script>
+          function mouseover(){
+                    document.getElementById("demo").style.color="white";
+                    document.getElementById("demo").style.background="blue";
+                    document.getElementById("demo").style.fontSize="30px";
+                    }
+                    function mouseout(){
+                              document.getElementById("demo").style.color="black";
+                    }
+</script>
+</body>
+</html>

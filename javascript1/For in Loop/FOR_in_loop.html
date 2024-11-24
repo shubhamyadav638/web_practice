@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+  <h2>javascript For in loop</h2>
+  <p id="demo"></p>
+  <script>
+     const mobile={mobilename:"oppo",mobile:"A57",color:"Gold"} ;
+     let mobile_details=" ";
+     for(let x in mobile){
+          mobile_details+=mobile[x]+" ";
+     }
+     document.getElementById("demo").innerHTML=mobile_details;
+  </script>        
+</body>
+</html>
+
+<!--oppo A57 Gold-->

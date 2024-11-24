@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>CSS overflow Property overflow </title>
+    <style>
+     .container {
+        border-radius: 2px solid black ;
+        width: 200px;
+        height: 100px;
+        padding: 10px;
+        margin: 25px;
+        display: inline-block;
+     }
+       .visible {
+        background-color: blueviolet;
+        overflow: visible;
+       }
+       .hidden  {
+        background-color: pink;
+        overflow: hidden;
+       }
+       .auto {
+        background-color: aqua;
+        overflow: auto;
+       }
+       .scroll {
+        background-color: red;
+        overflow: scroll;
+       }
+       .clip {
+        background-color: brown;
+        overflow: clip;
+       }
+    </style>
+</head>
+<body>
+    <h1>CSS overflow Property</h1>
+     
+     <div class="container visible">
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ea, quae architecto dicta, explicabo est vero debitis tempora nisi nesciunt magnam dolore. </p>
+    </div>
+    <div class="container hidden">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ea, quae architecto dicta, explicabo est vero debitis tempora nisi nesciunt magnam dolore. </p>
+       </div>
+       <div class="container auto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ea, quae architecto dicta, explicabo est vero debitis tempora nisi nesciunt magnam dolore. </p>
+       </div>
+       <div class="container scroll">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ea, quae architecto dicta, explicabo est vero debitis tempora nisi nesciunt magnam dolore. </p>
+       </div>
+       <div class="container clip">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ea, quae architecto dicta, explicabo est vero debitis tempora nisi nesciunt magnam dolore. </p>
+       </div>
+</body>
+</html>

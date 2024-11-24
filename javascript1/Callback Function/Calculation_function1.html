@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+  <h1>js Calculation functin</h1>
+  <div id="demo"></div>
+  <script>
+    function Calculation (a,b,x){
+          result=a+b;
+          x (result);
+    } 
+    function display(y){
+      console.log("result value is:" +y);
+      document.getElementById("demo").innerHTML=("result value is:" +y);//result value is:60  
+
+    } 
+    //function call
+    Calculation(10,50,display);//result value is:60    
+  </script>        
+</body>
+</html>

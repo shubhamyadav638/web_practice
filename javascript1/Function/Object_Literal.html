@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+
+<body>
+          <h1>Javascript By object Literal</h1>
+          <div id="demo"></div>
+          <div id="demo1"></div>
+          <div id="demo2"></div>
+          <script>
+                    const person = {          
+                              firstname: "swati",
+                              lastname: "maurya",
+                              age: 24,
+                    };
+                    //object call
+                    console.log(person);
+                    document.getElementById("demo").innerHTML = person;
+                    //1-way
+                    console.log("hello" + person.firstname);
+                    document.getElementById("demo1").innerHTML = "hello" + person.firstname;
+                    //2-way
+                    console.log("hello", person["firstname"], "", person["lastname"]);
+                    document.getElementById("demo2").innerHTML = "welcome" + person["firstname"] + "" + person["lastname"];
+          </script>
+</body>
+
+</html>

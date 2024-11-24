@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+      <h1>Javascript DO while loop</h1> 
+      <div id="demo"></div>
+      <script>
+          let a=2;
+          let text="";
+          do{
+                    console.log(a);
+                    text=text+a+"<br>";
+                    a=a+2;
+          }
+          while(a<=10);
+                    document.getElementById("demo").innerHTML=text;
+                    //output-2,4,6,8,10
+          
+      </script>   
+</body>
+</html>

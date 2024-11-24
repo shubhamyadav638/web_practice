@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            background-color: blue;
+            border: white;
+     display: flex;
+        }
+        .box{
+            background-color: brown;
+            margin: 20px;
+            padding: 20px;
+            
+        }
+        .row-reverse {
+            flex-direction: row-reverse;
+        }
+        .column {
+            flex-direction: column;
+        }
+        .column-reverse {
+            flex-direction: column-reverse;
+        }
+    </style>
+
+</head>
+<body>
+    <h1> Flexbox direction (default)</h1>
+    <div class="container">
+     <div class="box">one</div>
+     <div class="box">two</div>
+     <div class="box">three</div>
+     </div>
+     <h1> Flexbox direction (row-reverse)</h1>
+    <div class="row-reverse container">
+     <div class="box">one</div>
+     <div class="box">two</div>
+     <div class="box">three</div>
+     </div>
+      <h1>flexbox direction(column)</h1>
+      <div class="column container">
+        <div class="box">one</div>
+        <div class="box">two</div>
+        <div class="box">three</div>
+        </div>
+        <h1>flexbox direction(column-reverse)</h1>
+      <div class="column-reverse container">
+        <div class="box">one</div>
+        <div class="box">two</div>
+        <div class="box">three</div>
+        </div>
+</body>
+</html>

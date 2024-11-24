@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+
+<body>
+          <h1>Javascript Object Constructor</h1>
+          <div id="demo"></div>
+          <script>
+                    const person = {
+                              firstname: "Swati",
+                              lastname: "maurya",
+                              age: 24,
+                              //method
+                              fulldetails: function () {
+                                        return this.firstname + " " + this.lastname + " " + this.age;
+                              },
+                    };
+                    console.log(person.firstname + " " + person.lastname);
+                    console.log(person.fulldetails());
+                    //output-
+                       /* Swati maurya 24
+                        Swati maurya 24*/ 
+          </script>
+</body>
+
+</html>

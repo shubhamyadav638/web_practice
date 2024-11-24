@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+       <h1>Javascript Numbers</h1>
+       <script>
+          let num=Number.isFinite(123);
+          console.log(num);//true
+          let integer=Number.isInteger(99);
+          console.log(integer);//true
+          let Nan=Number.isNaN(NaN);
+          console.log(Nan);//true
+
+          let number=89.523456789;
+          let a=number.toExponential();
+          console.log(number);//89.523456789
+          console.log(a);//8.9523456789e+1
+          let b=number.toFixed();
+          console.log(b);//90
+
+          let money=1000000;
+          console.log(money);//1000000
+        let print=money.toLocaleString();
+        console.log(print);//1,000,000
+
+        let value=10.345678;
+        console.log(value);//10.345678
+        let show=value.toPrecision(6);
+        console.log(show);//10.3457
+
+        let x=1000;
+        console.log(x, typeof x);//1000 'number'
+
+        let y=x.toString();
+        console.log(y + " " + typeof y);//1000 string
+
+
+
+        
+       </script> 
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Document</title>
+</head>
+<body>
+<h1>Javscript Local and Global</h1>
+<script> 
+var a = 100; // Global variable 
+let b = 200; // Global variable
+ const c = 300; // Global  variable 
+ d = 400; // Global variable 
+ console.log(a); // 100 
+ console.log(b); //200 
+ console.log(c); //300 
+ console.log(d); //400
+ {
+console.log("Local Variables Value");
+var a = 1000; //local variable 
+let b = 2000; //local Variable
+ const c = 3000; //local variable 
+ d = 4000; //local variable 
+ console.log(a); //1000 
+ console.log(b); //2000 
+ console.log(c); //3000
+  console.log(d); //4000
+}
+console.log("Outer Block");
+console.log(a); //1000         
+console.log(b); //200 
+console.log(c); //300 
+console.log(d); //4000
+</script>
+</body>
+</html>

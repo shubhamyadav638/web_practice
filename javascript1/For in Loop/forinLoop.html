@@ -1,0 +1,20 @@
+<!-- Javascript For In loop Object -->
+<!DOCTYPE html>
+<html>
+<body>
+<h2> Javascript For In loop</h2>
+<p id="demo"></p>
+<script>
+const mobile={
+name:"Oppo",
+model:"A37",
+color:"Gold"
+};
+let mobile_details=" ";
+for(let key in mobile){
+mobile_details+=mobile[key]+" ";
+}
+document.getElementById("demo").innerHTML=mobile_details;
+</script>
+</body>
+</html>

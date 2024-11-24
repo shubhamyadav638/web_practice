@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Callback Function</title>
+</head>
+<body>
+   <h1>JS Callback functin</h1>
+   <script>
+          function display()
+          {
+          console.log("Hello Everyone");//Hello Everyone
+          }
+          function show(name,a)
+          {
+                    a();
+                    console.log(`Welcome ${name}`);
+          }
+          show("Swati",display);//Welcome Swati
+   </script>       
+</body>
+</html>

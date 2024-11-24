@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: blueviolet;
+            padding: 20px;
+            border: 5px solid green;
+        }
+        div p{
+          background-color: brown;
+          font-size: 20px;
+        }
+        /*div + p{
+            background-color: yellowgreen;
+            padding: 10px;
+            font-size: 20px;
+        }*/
+        div ~ p{ 
+            background-color: yellowgreen;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .demo1:hover{
+            background-color: aqua;
+            font-size: 20px;
+        }
+        .demo2:hover{
+            background-color: aqua;
+            font-size: 20px;
+        }
+        .demo3:hover{
+            background-color: aqua;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Adjacent Sibling Combinator (+)</h1>
+    <div>
+        <h1>Parent [Div]</h1>
+        <p>Paragraph - 1 (div)</p>
+        <p>Paragraph - 2 (div)</p>
+        <p>Paragraph - 3 (div)</p>
+        <section>
+            <h1>Child [section]</h1>
+            <p>Paragraph -1 (Div)</p>
+            <p>Paragraph -1 (Div)</p>
+            <p>Paragraph -1 (Div)</p>
+        </section>
+    </div>
+    <p class="demo1">Paragraph - 1 (Sibling1)</p>
+    <p class="demo2">Paragraph - 2 (Sibling2)</p>
+    <p class="demo3">Paragraph - 3 (Sibling3)</p>
+</body>
+</html>

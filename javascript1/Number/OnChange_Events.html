@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Events</h1> 
+    <h3>Form Events</h3> 
+    <form>
+          Choose which browser you prefer:
+          <select name="browser" id="browser" onchange="preferedBrowser()">
+                    <option value="Chrome">Chrome</option>
+                    <option value="Internet Explorer">Internet Explorer</option>
+                    <option value="Firefox">Firefox</option>
+
+          </select>
+    </form>
+    <script>
+          function preferedBrowser(){
+           prefer=document.forme[0].browsers.value; 
+           alert("you  prefer browsing internet with"+ prefer);        
+          }
+          
+    </script>    
+</body>
+</html>

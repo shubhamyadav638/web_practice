@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+   <h1>With Event litener</h1>
+   <button id="myButton">Click</button>
+   <script>
+
+    //1 way
+    //function showAlert(){
+     //alert ("Button was clicked...");
+    //}
+    // document.getElementById("myButton").addEventListener("click",showAlert);
+
+       //2 way-
+       //const showAlert=()=>alert("Hello Button was clicked");
+      // document.getElementById("myButton").addEventListener("click",showAlert); 
+
+      // 3 way
+      //document
+      //.getElementById("myButton")
+      //.addEventListener("click",function(){
+          //alert("Hello Button...");
+
+      //});
+
+      // 4 Way
+      document
+      .getElementById("myButton")
+      .addEventListener("click", ()=> alert("Welcome to click event"));
+    
+   </script>       
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+   <h1>js Classes</h1>
+   <h3 id="demo"></h3> 
+   <script>
+          class Great{
+          constructor(name,age){
+           this.name=name;
+           this.age=age;
+          }
+          }
+          const a=new Great("Nidhi",23);//Nidhi: 23
+          const a1=new Great("Swati",24);//Swati: 24
+          const a2=new Great("jyoti",26);//jyoti: 26
+          document.getElementById("demo").innerHTML=`${a.name}: ${a.age}<br> ${a1.name}: ${a1.age} <br> 
+          ${a2.name}: ${a2.age}`
+
+   </script>      
+</body>
+</html>

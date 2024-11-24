@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+   <h1>js Callback functin2</h1>
+   <div id="demo"></div>
+   <div id="demo1"></div>
+
+
+   <script>
+   function myValue(name,city,z,y,){
+    z(name,city,y);      
+   }
+   function myshow(a,b,y){
+          y();
+          console.log(`${a} ${b}`)//Nidhi jaunpur
+          document.getElementById("demo").innerHTML=(`${a} ${b}`);//Nidhi jaunpur
+   }
+   function display(){
+       console.log("Hello welcome to my home");  //Hello welcome to my home 
+       document.getElementById("demo1").innerHTML=("Hello welcome to my home"); //Hello welcome to my home 
+   }
+   //function call
+   myValue("Nidhi","jaunpur", myshow,display)
+   </script>       
+</body>
+</html>

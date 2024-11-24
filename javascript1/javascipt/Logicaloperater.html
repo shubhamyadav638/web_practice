@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript Logical Operater </h1>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <script>
+        let a = 10,
+            b = 30,
+            c = 40;
+        document.getElementById("demo").innerHTML = (a < b) & (a > b);
+        document.getElementById("demo1").innerHTML = (a < b) && (a > b);
+        document.getElementById("demo2").innerHTML = (a < b) || (a > b);
+        document.getElementById("demo3").innerHTML = (a < b) | (a > b);
+        document.getElementById("demo4").innerHTML = !(a < b);
+    </script>
+</body>
+
+</html>

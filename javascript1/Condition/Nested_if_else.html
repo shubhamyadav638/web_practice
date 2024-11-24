@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Nested If Else</h1>
+    <h3 id="demo"></h3>
+    <script>
+        let cibil_score=780;
+        let salary=20000;
+        if(cibil_score >=750 && cibil_score <= 900 ){
+            console.log("You can proceed for next Process");
+            document.getElementById("demo").innerHTML="You can proceed for next Process"
+        if(salary>=30000)
+        console.log("Congrts you got Personal Loan")
+    document.getElementById("demo").innerHTML="Congrts you got Personal Loan";
+        }else{
+            console.log("Sorry You Salary is Low....");
+            document.getElementById("demo").innerHTML="Sorry Now Your not Eligible..because of your salary is Low";
+
+        }
+      // else{
+     //console.log("Sorry Your not Eligible now Please try again after 6 months....");
+     //document.getElementById("demo").innerHTML="Sorry Your not Eligible now Please try again after 6 months....";
+      // }
+    
+    </script>
+</body>
+</html>

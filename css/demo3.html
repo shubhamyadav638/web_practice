@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #common{
+            font-size: 30px;
+            margin: 10px;
+            padding: 10px;
+            text-align: justify;
+        }
+        .fletter::first-letter{
+            font-size: 30px;
+            color: aqua;
+            font-weight: 800;
+        }
+        .fl::first-line{
+            font-size: 30px;
+            color: blueviolet;
+            font-weight: 800;
+        }
+        .Af::after{
+            content: url("https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/263a.png");
+        }
+        .bf::before{
+            content: url("https://cdn0.iconfinder.com/data/icons/remoji-soft-1/512/emoji-hello-happy-smile.png")
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>The::first-letter pseudo-element</h1>
+        <p class="fletter common">
+        HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam unde consequuntur provident inventore officiis vero quisquam dolorem in ipsum! Sunt, sequi. Totam doloribus, blanditiis facilis id provident sit pariatur consequatur!</p>
+       <h1>The::first-line pseudo-element</h1>
+       <p class="fl common">
+        HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem amet dignissimos ea nobis excepturi ex, aspernatur harum et fuga consequatur minus voluptate incidunt? Iste fugit alias qui, sed quidem incidunt?</p>
+        <h1>CSS- the::After pseudo-element</h1>
+        <p class="fletter Af">
+            HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias officia expedita similique, enim hic reprehenderit unde quia placeat! Fuga id quis voluptatibus laborum maxime distinctio quaerat, necessitatibus tempora voluptatum quas.</p>
+            <h1>CSS- the::before pseudo-element</h1>
+            <p class="fletter bf">
+                HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore doloribus veritatis quod officia repellendus architecto commodi? Laudantium exercitationem autem ex magnam? Incidunt magnam qui dicta porro a et quis perspiciatis.</p>
+                <h1>CSS-The::marker pseudo-element</h1>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>javascrept</li>
+                    <li>java</li>
+                    <li>python</li>
+                </ul>
+    </div> 
+</body>
+</html>

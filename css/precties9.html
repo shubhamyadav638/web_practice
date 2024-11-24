@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            background-color: blueviolet;
+            display: flex;
+        }
+        .flex-container >div{
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            margin: 10px;
+            padding: 4px;
+            line-height: 75px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .grow div{
+flex-grow: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> without flex-grow Property</h1>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h1> without flex-grow Property</h1>
+    <div class="flex-container glow">
+        <div style="flex-shrink: 0;">1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h1> without flex-grow Property</h1>
+    <div class="flex-container">
+        <div style="flex-grow: 1;">Swati</div>
+        <div style="flex-grow: 1;">Swati</div>
+        <div style="flex-grow: 8;">swati</div>
+       
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 350px;
+            height: 200px;
+            text-align: center;
+            display: inline-block;
+            margin: 10px;
+        }
+        .ttb{
+            background-image:linear-gradient(green,yellow)
+        }
+        .ltr{
+            background-image: linear-gradient(to right,green,red);
+        }
+        .deg{
+            background-image: linear-gradient(360deg,green,red);
+        }
+        .multicolor{
+            background-image:  linear-gradient(red,blue 50%,yellow);
+        }
+        .rlg{
+            background-image: repeating-linear-gradient(red,blue 10%,pink 20%);
+        }
+        .default{
+            background-image:radial-gradient(red,rgb(9, 132, 248),yellow) ;
+        }
+        .circle{
+            background-image: radial-gradient(blue,yellow,red);
+        }
+        .rrg{
+            background-image: repeating-linear-gradient(blue,yellow 10%,red 30%);
+        }
+        .cdefault{
+            background-image: conic-gradient(orange,white,green);
+
+        }
+        .deg{
+            background-image: conic-gradient(red,green);
+        }
+       .pie{
+     background-image: conic-gradient(blue,red,green,black);
+     border-radius: 50%;
+       }
+      .rcg{
+        background-image: repeating-conic-gradient(red 10%,green 20%,blue 10%);
+      }
+    </style>
+</head>
+<body>
+    <h1>CSS Gradient</h1>
+    <h2>Linear Gradient</h2>
+    <div class="container ttb">Top to bottom(default)</div>
+     <div class="container ltr">Left to Right</div>
+     <div class="container deg">Degree /angle</div>
+     <div class="container multicolor">multicolor</div>
+     <div class="container rlg">Repeat Linear Gradient</div>
+     <h2>CSS Radial Gradient</h2>
+     <div class="container default">Eclipse(default)</div>
+     <div class="container circle">circle</div>
+     <div class="container rrg">Repeat Radial Gradient</div>
+     <h1>CSS Conic Gradient </h1>
+    <div class="container deg"> 0 deg and center</div>
+    <div class="container pie"> Pie chart</div>
+    <div class="container rcg">Repeat Conic Gradient</div>
+      
+     
+</body> 
+</html>

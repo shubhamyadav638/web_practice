@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+  <h2>javascript for In loop</h2> 
+  <p id="demo"></p>
+  <script>
+   const fruits=["Apple","Mango","Pineapple","Orange"];
+   let value=" ";
+   for (let x in fruits){
+          value+=fruits[x]+"<br>";
+   } 
+   document.getElementById("demo").innerHTML=value;      
+  </script>       
+</body>
+</html>
+<!--Apple
+Mango
+Pineapple
+Orange--> 

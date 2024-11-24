@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+    <h1>The Element Object</h1>
+    <h2>The replaceChild()Method</h2> 
+    
+
+    <ul id="myList">
+    <li>Swati</li>  
+    <li>jyotsana</li>  
+    <li>Surbhi</li>
+    </ul>
+    <p>Click "Replace" to replace the first item in the list..</p> 
+    <button onclick="myFunction()">"Replace"</button>
+    <script>
+          function myFunction(){
+     //Select first child element:
+     const element=document.getElementById("myList").children[0];
+
+     //Create a new text node:
+     const newNode=document.createTextNode("Water");
+     
+     //Replace the text node:
+     element.replaceChild(newNode,element.childNodes[0]);
+          }
+    </script>    
+</body>
+</html>

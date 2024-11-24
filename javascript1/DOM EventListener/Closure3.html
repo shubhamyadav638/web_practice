@@ -1,0 +1,40 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Document</title>
+</head>
+<body>
+<h1>With JavaScript Closure</h1> 
+<h3 id="demo"></h3>
+<script>
+	// //outer Function
+	//function calculation(a, b) {
+	// //---->2 (a,b) (a=10,b=3)
+	// let result = a % b;  //---->3 result = 10%3 ||1
+	// // inner Function
+	// function display() {
+	// //--->5
+	// console.log("Result Value: " + result); //-->6 1
+	// let a = document.getElementById("demo"); //--->7 a=<h3></h3>
+	// a.innerHTML = "Moduls value is : " + result; //---> 1
+	// }
+	// //calling Inner Function
+	// display(); // ---->4
+	// }
+	// //calling Outer Function
+	// calculation(10, 3); //----->1
+// Arrow Function 
+ //outer Function
+  const calculation = (a, b) => {
+let result = a % b; 
+// inner Function 
+const display = () => {
+ console.log(result);
+  document.getElementById("demo").innerHTML = result;
+};
+display();
+};
+calculation(11, 3);
+</script>
+</body>
+</html>

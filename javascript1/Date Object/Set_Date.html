@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>set date object</h1>
+    <div id="demo"></div>
+    <script>
+        const d=new Date();
+        d.setDate(22);
+        d.setMonth(4);
+        d.setYear(2002);
+        console.log(`set Date: ${d}`);//set Date: Wed May 22 2002 16:07:30 GMT+0530 (India Standard Time)
+        document.getElementById("demo").innerHTML=d;//Wed May 22 2002 16:08:05 GMT+0530 (India Standard Time)
+    </script>
+</body>
+</html>
